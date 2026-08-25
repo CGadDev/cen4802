@@ -1,0 +1,10 @@
+# Generated Java build output
+build/
+*.class
+
+# Eclipse temporary/settings files
+.settings/
+
+# Operating system files
+.DS_Store
+Thumbs.db
