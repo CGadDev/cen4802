@@ -14,24 +14,43 @@
         }
 
         .result-container {
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
             background-color: white;
             padding: 40px;
-            text-align: center;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
 
+        h1 {
+            text-align: center;
+        }
+
         .score {
+            text-align: center;
             font-size: 48px;
             font-weight: bold;
             margin: 25px 0;
         }
 
+        .feedback-section {
+            margin-top: 30px;
+        }
+
+        .feedback {
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #f5f5f5;
+            border-radius: 6px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         a {
             display: inline-block;
-            margin-top: 20px;
             padding: 12px 25px;
             background-color: #333;
             color: white;
@@ -47,15 +66,27 @@
 
     <h1>Color Quiz Results</h1>
 
-    <p>Your final score is:</p>
+    <p style="text-align: center;">Your final score is:</p>
 
     <div class="score">
         ${score} / ${totalQuestions}
     </div>
 
-    <p>Thanks for taking the Color Quiz!</p>
+    <div class="feedback-section">
 
-    <a href="index.jsp">Take Quiz Again</a>
+        <h2>Answer Feedback</h2>
+
+        <div class="feedback">${feedback1}</div>
+        <div class="feedback">${feedback2}</div>
+        <div class="feedback">${feedback3}</div>
+        <div class="feedback">${feedback4}</div>
+        <div class="feedback">${feedback5}</div>
+
+    </div>
+
+    <div class="button-container">
+        <a href="index.jsp">Take Quiz Again</a>
+    </div>
 
 </div>
 
